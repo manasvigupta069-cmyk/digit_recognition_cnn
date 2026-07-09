@@ -7,7 +7,7 @@ st.title("Digit Recognition using CNN (MNIST)")
 st.write("Upload an image of a digit (28x28 grayscale)")
 model = tf.keras.models.load_model("mnist_cnn.h5")
 uploaded_file = st.file_uploader("Choose an image...", type="jpg")
-uploaded_file = st.file_uploader("Choose an image...", 
+uploaded_file = st.file_uploader("Choose an image...")
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file).convert('L')  # Convert to grayscale
